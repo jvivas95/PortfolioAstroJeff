@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import '../utils/helperes.js';
+import { getNombreSeccion } from '../utils/helperes.js';
 ---
 
 <nav class="w-full fixed top-0 left-0 z-50 border border-solid">
@@ -13,11 +15,11 @@ import '../styles/global.css';
 
       <!-- Links de navegación -->
       <div class="hidden md:flex space-x-6 border border-solid rounded-4xl p-1.5 pl-2.5 pr-2.5">
-        <a href="#sobre-mi" class=" hover:text-green-700 transition">Sobre mí</a>
-        <a href="#conocimientos" class=" hover:text-green-700 transition">Conocimientos</a>
-        <a href="#proyectos" class=" hover:text-green-700 transition">Proyectos</a>
-        <a href="#formacion" class=" hover:text-green-700 transition">Formación</a>
-        <a href="#contacto" class=" hover:text-green-700 transition">Contacto</a>
+        <a href="#sobre-mi" class=" hover:text-green-700 transition">{getNombreSeccion("sobreMi")}</a>
+        <a href="#conocimientos" class=" hover:text-green-700 transition">{getNombreSeccion("conocimientos")}</a>
+        <a href="#proyectos" class=" hover:text-green-700 transition">{getNombreSeccion("proyectos")}</a>
+        <a href="#formacion" class=" hover:text-green-700 transition">{getNombreSeccion("formacion")}</a>
+        <a href="#contacto" class=" hover:text-green-700 transition">{getNombreSeccion("contacto")}</a>
       </div>
 
       <!-- Botón de descarga de CV -->
