@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+---
+
+<nav class="w-full fixed top-0 left-0 z-50 border border-solid">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      
+      <!-- Logo o Nombre -->
+      <div class="flex-shrink-0">
+		<img class="flex-shrink-0 max-w-12" src="../../public/logo_blanco.png"/>
+      </div>
+
+      <!-- Links de navegación -->
+      <div class="hidden md:flex space-x-6 border border-solid rounded-4xl p-1.5 pl-2.5 pr-2.5">
+        <a href="#sobre-mi" class=" hover:text-green-700 transition">Sobre mí</a>
+        <a href="#conocimientos" class=" hover:text-green-700 transition">Conocimientos</a>
+        <a href="#proyectos" class=" hover:text-green-700 transition">Proyectos</a>
+        <a href="#formacion" class=" hover:text-green-700 transition">Formación</a>
+        <a href="#contacto" class=" hover:text-green-700 transition">Contacto</a>
+      </div>
+
+      <!-- Botón de descarga de CV -->
+      <div class="hidden md:flex">
+        <a href="/cv.pdf" target="_blank" class="bg-fuchsia-800 text-white px-4 py-2 rounded-lg hover:bg-blue-400 hover:text-black transition duration-700">
+          Descargar CV
+        </a>
+      </div>
+
+      <!-- Menú móvil (icono hamburguesa) -->
+      <div class="md:hidden">
+        <!-- Aquí podrías implementar un botón con JS o usar Alpine.js si quieres interactividad -->
+        <button class=" focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</nav>
