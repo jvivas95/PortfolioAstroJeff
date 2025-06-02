@@ -121,4 +121,36 @@ import { getNombreSeccion } from "../utils/helperes.js";
   function onMouse() {
     const menu = document.getElementsByTagName;
   }
+
+  const secciones = [
+    {id: "sobre-mi", link: "#sobre-mi"},
+    {id: "conocimientos", link: "#conocimientos"},
+    {id: "proyectos", link: "#proyectos"},
+    {id: "formacion", link: "#formacion"},
+    {id: "contacto", link: "#contacto"}
+  ];
+
+  function marcarSeccionActiva(){
+    let scrollPos = window.scrollY || window.pageXOffset;
+    let offset = 100; // Ajusta este valor según sea necesario
+
+    for (let i=0; i < secciones.length; i++){
+      const seccion = document.getElementById(secciones[i].id);
+      if (seccion && seccion.offsetTop - offset <= scrollPos) {
+        seccionActiva = secciones[i].id;
+      }
+    }
+
+    // Actualizar el enlace activo en el menú
+    document.querySelectorAll('nav a[href^="#"]').forEach(a => {
+      a.classList.remove("active-navbar-link");
+      if (a.getAttribute("href") === "#" + seccionActiva) {
+        a.classList.add("active-navbar-link");
+      }
+    });
+
+  }
+
+  window.addEventListener("scroll", marcarSeccionActiva);
+  window.addEventListener("DOMContentLoaded", marcarSeccionActiva);
 </script>

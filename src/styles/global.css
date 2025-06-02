@@ -8,6 +8,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.active-navbar-link {
+  background: white;
+  color: black !important;
+  border-radius: 2rem;
+  transition: background 0.7s, color 0.7s;
+
+}
+
 .neon-breathe {
   width: 120px;
   height: 120px;
