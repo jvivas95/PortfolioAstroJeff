@@ -1,17 +1,64 @@
 ---
 import '../styles/global.css';
 import { getNombreSeccion } from '../utils/helperes.js';
-
 ---
-<section id="proyectos">
-<div class="h-screen flex flex-col border border-solid">
-  <h1 class="w-full h-auto text-7xl mt-20 mb-8 text-center">{getNombreSeccion("proyectos")}</h1>
-  <div class="flex flex-row w-full h-full">
-<!--   <div class="h-full flex flex-1 items-center justify-center border border-solid">
-    foto
-  </div>
-  <div class="h-full flex flex-1 items-center justify-center border border-solid">
-    texto sobre mi
-  </div> -->
+
+<section id="proyectos" class="w-screen py-20 bg-transparent">
+  <div class="container mx-auto flex flex-col">
+    <!-- Título -->
+    <h1 class="text-5xl md:text-7xl font-extrabold text-center mb-12">
+      {getNombreSeccion("proyectos")}
+    </h1>
+
+    <!-- Subtítulo -->
+    <p class="text-center text-gray-400 mb-14 text-lg">
+      Algunos de mis trabajos más recientes y representativos 🚀
+    </p>
+
+    <!-- Grid de proyectos -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Proyecto 1 -->
+      <div class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
+        <div class="p-6">
+          <h2 class="text-xl font-bold mb-2">Proyecto 1</h2>
+          <p class="text-gray-400 mb-4">
+            Breve descripción de tu proyecto, lo que resolviste o aprendiste.
+          </p>
+          <a href="https://github.com/tuusuario/proyecto1" target="_blank" class="text-blue-400 font-semibold hover:underline">
+            Ver código →
+          </a>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
+        <img src="/projects/proyecto2.png" alt="Proyecto 2" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h2 class="text-xl font-bold mb-2">Proyecto 2</h2>
+          <p class="text-gray-400 mb-4">
+            Otro ejemplo, puede ser una app real o un proyecto de práctica.
+          </p>
+          <a href="https://github.com/tuusuario/proyecto2" target="_blank" class="text-blue-400 font-semibold hover:underline">
+            Ver código →
+          </a>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
+        <img src="/projects/proyecto3.png" alt="Proyecto 3" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h2 class="text-xl font-bold mb-2">Proyecto 3</h2>
+          <p class="text-gray-400 mb-4">
+            Un tercer proyecto para completar el grid.
+          </p>
+          <a href="https://github.com/tuusuario/proyecto3" target="_blank" class="text-blue-400 font-semibold hover:underline">
+            Ver código →
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
