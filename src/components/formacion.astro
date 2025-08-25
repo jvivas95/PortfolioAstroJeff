@@ -1,17 +1,35 @@
 ---
 import '../styles/global.css';
 import { getNombreSeccion } from '../utils/helperes.js';
-
 ---
-<section id="formacion">
-<div class="h-screen flex flex-col border border-solid">
-  <h1 class="w-full h-auto text-7xl mt-20 mb-8 text-center">{getNombreSeccion("formacion")}</h1>
-  <div class="flex flex-row w-full h-full">
-<!--   <div class="h-full flex flex-1 items-center justify-center border border-solid">
-    foto
-  </div>
-  <div class="h-full flex flex-1 items-center justify-center border border-solid">
-    texto sobre mi
-  </div> -->
-  </div>
-</section>
+
+<section id="formacion" class="w-screen py-20 bg-transparent">
+  <div class="container mx-auto flex flex-col">
+    <!-- Título -->
+    <h2 class="text-5xl md:text-7xl font-extrabold text-center mb-12">
+      {getNombreSeccion("formacion")}
+    </h2>
+
+    <!-- Timeline -->
+    <div class="relative ml-8">
+      <!-- Línea vertical con gradiente -->
+      <div class="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-purple-500 to-blue-500 rounded-full"></div>
+
+      <!-- Item 1 -->
+      <div class="relative pl-10 mb-10">
+        <!-- Punto -->
+        <span class="absolute left-[-9px] top-2 w-4 h-4 rounded-full bg-gray-900 border-2 border-purple-500 shadow-[0_0_0_4px_rgba(124,92,255,0.2)]"></span>
+        <div class="font-extrabold text-lg">Grado Superior en Desarrollo de Aplicaciones Web</div>
+        <div class="text-gray-400 text-sm mb-2">2023 — 2025 · DAW</div>
+        <div class="text-gray-300">
+          Fundamentos de programación, bases de datos, despliegue y proyectos integrados.
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="relative pl-10 mb-10">
+        <!-- Punto -->
+        <span class="absolute left-[-9px] top-2 w-4 h-4 rounded-full bg-gray-900 border-2 border-purple-500 shadow-[0_0_0_4px_rgba(124,92,255,0.2)]"></span>
+        <div class="font-extrabold text-lg">Aprendizaje continuo</div>
+        <div class="text-gray-400 text-sm mb-2">Cursos y proyectos personales</div>
+        <
