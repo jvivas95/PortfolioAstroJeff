@@ -1,17 +1,70 @@
 ---
 import '../styles/global.css';
 import { getNombreSeccion } from '../utils/helperes.js';
-
 ---
-<section id="conocimientos">
-<div class="h-screen flex flex-col border border-solid">
-  <h1 class="w-full h-auto text-7xl mt-20 mb-8 text-center">{getNombreSeccion("conocimientos")}</h1>
-  <div class="flex flex-row w-full h-full">
-<!--   <div class="h-full flex flex-1 items-center justify-center border border-solid">
-    foto
-  </div>
-  <div class="h-full flex flex-1 items-center justify-center border border-solid">
-    texto sobre mi
-  </div> -->
+
+<section id="conocimientos" class="w-screen py-20 bg-transparent">
+  <div class="container mx-auto flex flex-col">
+    <!-- Título -->
+    <h1 class="text-5xl md:text-7xl font-extrabold text-center mb-12">
+      {getNombreSeccion("conocimientos")}
+    </h1>
+
+    <!-- Subtítulo -->
+    <p class="text-center text-gray-400 mb-14 text-lg">
+      Stack con el que trabajo a gusto — siempre abierto a aprender más.
+    </p>
+
+    <!-- Grid de conocimientos -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">HTML5</span>
+        <small class="block text-gray-400 mt-2">Maquetación semántica</small>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">CSS3</span>
+        <small class="block text-gray-400 mt-2">Flexbox & Grid</small>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">JavaScript</span>
+        <small class="block text-gray-400 mt-2">ES6+</small>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">PHP</span>
+        <small class="block text-gray-400 mt-2">OOP</small>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">Symfony</span>
+        <small class="block text-gray-400 mt-2">CRUD, Forms</small>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">MySQL</span>
+        <small class="block text-gray-400 mt-2">Consultas/Índices</small>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">Git</span>
+        <small class="block text-gray-400 mt-2">Flujos básicos</small>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">Astro</span>
+        <small class="block text-gray-400 mt-2">SSG</small>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">Tailwind</span>
+        <small class="block text-gray-400 mt-2">UI rápida</small>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">Docker</span>
+        <small class="block text-gray-400 mt-2">Entornos</small>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">Linux</span>
+        <small class="block text-gray-400 mt-2">CLI</small>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <span class="font-bold text-lg">Testing</span>
+        <small class="block text-gray-400 mt-2">PHPUnit</small>
+      </div>
+    </div>
   </div>
 </section>
