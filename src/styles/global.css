@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/* Prevenir overflow horizontal */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto Mono", monospace;
 }
