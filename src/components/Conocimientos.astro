@@ -4,67 +4,145 @@ import { getNombreSeccion } from '../utils/helperes.js';
 ---
 
 <section id="conocimientos" class="w-full py-20 bg-transparent">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col relative z-10">
     <!-- Título -->
-    <h1 class="text-4xl md:text-7xl font-extrabold text-center mb-12">
+     <h1 class="text-4xl md:text-7xl font-extrabold text-center mb-12 opacity-0 translate-y-10 transition-all duration-1000" data-animate>
       {getNombreSeccion("conocimientos")}
     </h1>
 
     <!-- Subtítulo -->
-    <p class="text-center text-gray-400 mb-14 text-lg">
-      Stack con el que trabajo a gusto — siempre abierto a aprender más.
+    <p class="text-center mb-14 text-lg md:text-2xl opacity-0 translate-y-10 transition-all duration-1000 delay-200" data-animate>
+      Stack con el que he trabajado — siempre abierto a aprender más.
     </p>
 
     <!-- Grid de conocimientos -->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">HTML5</span>
-        <small class="block text-gray-400 mt-2">Maquetación semántica</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="300">
+        <span class="font-bold text-lg md:text-3xl">HTML5</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">Maquetación semántica</small>
       </div>
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">CSS3</span>
-        <small class="block text-gray-400 mt-2">Flexbox & Grid</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="400">
+        <span class="font-bold text-lg md:text-3xl">CSS3</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">Flexbox & Grid</small>
       </div>
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">JavaScript</span>
-        <small class="block text-gray-400 mt-2">ES6+</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="500">
+        <span class="font-bold text-lg md:text-3xl">JS</span>
+        <span class="text-lg md:text-2xl">JavaScript</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">ES6+</small>
       </div>
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">PHP</span>
-        <small class="block text-gray-400 mt-2">OOP</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="600">
+        <span class="font-bold text-lg md:text-3xl">PHP</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">OOP</small>
       </div>
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">Symfony</span>
-        <small class="block text-gray-400 mt-2">CRUD, Forms</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="700">
+        <span class="font-bold text-lg md:text-3xl">Symfony</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">CRUD, Forms</small>
       </div>
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">MySQL</span>
-        <small class="block text-gray-400 mt-2">Consultas/Índices</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="800">
+        <span class="font-bold text-lg md:text-3xl">MySQL</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">Consultas/Índices</small>
       </div>
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">Git</span>
-        <small class="block text-gray-400 mt-2">Flujos básicos</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="900">
+        <span class="font-bold text-lg md:text-3xl">Git</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">Flujos básicos</small>
       </div>
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">Astro</span>
-        <small class="block text-gray-400 mt-2">SSG</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="1000">
+        <span class="font-bold text-lg md:text-3xl">Astro</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">SSG</small>
       </div>
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">Tailwind</span>
-        <small class="block text-gray-400 mt-2">UI rápida</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="1100">
+        <span class="font-bold text-lg md:text-3xl">Tailwind</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">UI rápida</small>
       </div>
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">Docker</span>
-        <small class="block text-gray-400 mt-2">Entornos</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="1200">
+        <span class="font-bold text-lg md:text-3xl">Docker</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">Entornos</small>
       </div>
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">Linux</span>
-        <small class="block text-gray-400 mt-2">CLI</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="1300">
+        <span class="font-bold text-lg md:text-3xl">Linux</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">CLI</small>
       </div>
-      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-        <span class="font-bold text-lg">Testing</span>
-        <small class="block text-gray-400 mt-2">PHPUnit</small>
+      <div class="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                  opacity-0 translate-y-10" 
+           data-animate data-delay="1400">
+        <span class="font-bold text-lg md:text-3xl">Testing</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">PHPUnit</small>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  // Intersection Observer para animaciones de entrada
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const element = entry.target;
+        const delay = element.dataset.delay || 0;
+        
+        setTimeout(() => {
+          element.classList.remove('opacity-0', 'translate-y-10');
+          element.classList.add('opacity-100', 'translate-y-0');
+        }, delay);
+        
+        observer.unobserve(element);
+      }
+    });
+  }, observerOptions);
+
+  // Observar todos los elementos con data-animate
+  document.querySelectorAll('[data-animate]').forEach(el => {
+    observer.observe(el);
+  });
+</script>
