@@ -23,7 +23,9 @@ html {
   background: white;
   color: black !important;
   border-radius: 2rem;
-  transition: background 0.7s, color 0.7s;
+  transition:
+    background 0.7s,
+    color 0.7s;
 }
 
 .neon-breathe {
@@ -31,7 +33,10 @@ html {
   height: 120px;
   border-radius: 50%;
   border: 4px solid #00fff777;
-  box-shadow: 0 0 30px #00fff721, 0 0 60px #00fff75e, 0 0 100px #00fff759;
+  box-shadow:
+    0 0 30px #00fff721,
+    0 0 60px #00fff75e,
+    0 0 100px #00fff759;
   animation: breathe 2.5s ease-in-out infinite;
   opacity: 0.7;
   z-index: 0;
@@ -64,11 +69,17 @@ html {
 @keyframes breathe {
   0%,
   100% {
-    box-shadow: 0 0 30px #00fff783, 0 0 60px #00fff73d, 0 0 100px #00fff728;
+    box-shadow:
+      0 0 30px #00fff783,
+      0 0 60px #00fff73d,
+      0 0 100px #00fff728;
     opacity: 0.7;
   }
   50% {
-    box-shadow: 0 0 60px #00fff756, 0 0 120px #00fff73f, 0 0 200px #00fff746;
+    box-shadow:
+      0 0 60px #00fff756,
+      0 0 120px #00fff73f,
+      0 0 200px #00fff746;
     opacity: 1;
   }
 }
@@ -88,4 +99,19 @@ html {
 .text-outline {
   -webkit-text-stroke: 2px black;
   text-stroke: 2px black;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
 }
