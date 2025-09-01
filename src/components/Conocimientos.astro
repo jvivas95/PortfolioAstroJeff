@@ -6,7 +6,7 @@ import { getNombreSeccion } from '../utils/helperes.js';
 <section id="conocimientos" class="w-full py-20 bg-transparent">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col relative z-10">
     <!-- Título -->
-     <h1 class="scroll-animation scroll-animation-default text-4xl md:text-7xl font-extrabold text-center mb-12 translate-y-10 transition-all duration-1000" data-animate>
+    <h1 class="scroll-animation scroll-animation-default text-4xl md:text-7xl font-extrabold text-center mb-12 translate-y-10 transition-all duration-1000" data-animate>
       {getNombreSeccion("conocimientos")}
     </h1>
 
@@ -15,8 +15,9 @@ import { getNombreSeccion } from '../utils/helperes.js';
       Stack con el que he trabajado — siempre abierto a aprender más.
     </p>
 
-    <!-- Grid de conocimientos -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
+    <!-- Frontend -->
+    <h2 class="text-2xl font-bold mb-6 mt-8 text-center">Frontend</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center mb-10">
       <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
                   hover:bg-white/10 hover:scale-105 hover:border-white/20 
                   transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
@@ -47,9 +48,18 @@ import { getNombreSeccion } from '../utils/helperes.js';
                   transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
                    translate-y-10" 
            data-animate data-delay="600">
-        <span class="font-bold text-lg md:text-3xl">PHP</span>
-        <small class="block text-gray-400 mt-2 md:text-lg">OOP</small>
+        <span class="font-bold text-lg md:text-3xl">REACT</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">Componentes</small>
       </div>
+      <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                   translate-y-10" 
+           data-animate data-delay="600">
+        <span class="font-bold text-lg md:text-3xl">Astro</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">SSG</small>
+      </div>
+      <!--
       <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
                   hover:bg-white/10 hover:scale-105 hover:border-white/20 
                   transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
@@ -94,17 +104,18 @@ import { getNombreSeccion } from '../utils/helperes.js';
                   hover:bg-white/10 hover:scale-105 hover:border-white/20 
                   transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
                    translate-y-10" 
-           data-animate data-delay="1200">
-        <span class="font-bold text-lg md:text-3xl">Docker</span>
-        <small class="block text-gray-400 mt-2 md:text-lg">Entornos</small>
+           data-animate data-delay="1300">
+        <span class="font-bold text-lg md:text-3xl">Linux</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">CLI</small>
       </div>
+
       <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
                   hover:bg-white/10 hover:scale-105 hover:border-white/20 
                   transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
                    translate-y-10" 
-           data-animate data-delay="1300">
-        <span class="font-bold text-lg md:text-3xl">Linux</span>
-        <small class="block text-gray-400 mt-2 md:text-lg">CLI</small>
+           data-animate data-delay="1200">
+        <span class="font-bold text-lg md:text-3xl">Docker</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">Entornos</small>
       </div>
       <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
                   hover:bg-white/10 hover:scale-105 hover:border-white/20 
@@ -114,6 +125,83 @@ import { getNombreSeccion } from '../utils/helperes.js';
         <span class="font-bold text-lg md:text-3xl">Testing</span>
         <small class="block text-gray-400 mt-2 md:text-lg">PHPUnit</small>
       </div>
+       -->
+    </div>
+
+    <!-- Backend -->
+    <h2 class="text-2xl font-bold mb-6 mt-8 text-center">Backend</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center mb-10">
+      <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                   translate-y-10" 
+           data-animate data-delay="600">
+        <span class="font-bold text-lg md:text-3xl">PHP</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">POO</small>
+      </div>
+      <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                   translate-y-10" 
+           data-animate data-delay="700">
+        <span class="font-bold text-lg md:text-3xl">Symfony</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">CRUD, Forms</small>
+      </div>
+      <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                   translate-y-10" 
+           data-animate data-delay="800">
+        <span class="font-bold text-lg md:text-3xl">MySQL</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">Consultas/Índices</small>
+      </div>
+      <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                   translate-y-10" 
+           data-animate data-delay="800">
+        <span class="font-bold text-lg md:text-3xl">MySQL</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">Consultas/Índices</small>
+      </div>
+    </div>
+
+    <!-- Herramientas -->
+    <h2 class="text-2xl font-bold mb-6 mt-8 text-center">Herramientas</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
+      <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                   translate-y-10" 
+           data-animate data-delay="900">
+        <span class="font-bold text-lg md:text-3xl">Git</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">Flujos básicos</small>
+      </div>
+      <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                   translate-y-10" 
+           data-animate data-delay="1000">
+        <span class="font-bold text-lg md:text-3xl">Linux</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">CLI</small>
+      </div>
+      <!--
+      <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                   translate-y-10" 
+           data-animate data-delay="1200">
+        <span class="font-bold text-lg md:text-3xl">Docker</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">Entornos</small>
+      </div>
+      <div class="scroll-animation scroll-animation-default p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
+                  hover:bg-white/10 hover:scale-105 hover:border-white/20 
+                  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/5
+                   translate-y-10" 
+           data-animate data-delay="1400">
+        <span class="font-bold text-lg md:text-3xl">Testing</span>
+        <small class="block text-gray-400 mt-2 md:text-lg">PHPUnit</small>
+      </div>
+       -->
     </div>
   </div>
 </section>
