@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { getNombreSeccion } from '../utils/helperes.js';
+import { getNombreSeccion } from '../utils/helpers.js';
 ---
 
 <section id="proyectos" class="w-full py-20 bg-transparent">
@@ -17,46 +17,102 @@ import { getNombreSeccion } from '../utils/helperes.js';
 
     <!-- Grid de proyectos -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Proyecto 1 -->
+
+      <!-- Proyecto MONEY TRACKER -->
       <div class="scroll-animation scroll-animation-default group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
-        <img src="/projects/proyecto2.png" alt="Proyecto 2" class="w-full h-56 object-cover">
+        <img src="/public/MoneyTracker.png" alt="Proyecto 3" class="mx-auto w-fit h-64 object-cover mt-4 rounded-2xl drop-shadow-sm drop-shadow-white">
         <div class="p-6">
-          <h2 class="text-xl font-bold mb-2">Proyecto 1</h2>
+          <h2 class="text-xl font-bold mb-2">Money Tracker (FullStack)</h2>
           <p class="text-gray-400 mb-4">
-            Breve descripción de tu proyecto, lo que resolviste o aprendiste.
+            Este es mi proyecto más personal, ya que diseñé y programé esta aplicación desde 0.
+            <br/>Money tracker fue creada para mi madre, la idea nace de la necesidad de tener una herramienta para llevar el control de las finanzas de mis abuelos.
           </p>
-          <a href="https://github.com/tuusuario/proyecto1" target="_blank" class="text-blue-400 font-semibold hover:underline">
+          <a href="https://github.com/jvivas95/movimientos-dinero.git" target="_blank" class="text-blue-400 font-semibold hover:underline">
             Ver código →
           </a>
         </div>
       </div>
 
-      <!-- Proyecto 2 -->
+      <!-- Proyecto Tic Tac Toe -->
       <div class="scroll-animation scroll-animation-default group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
-        <img src="/projects/proyecto2.png" alt="Proyecto 2" class="w-full h-56 object-cover">
+        <img src="/public/React.png" alt="Proyecto 1" class="mx-auto w-fit h-64 object-cover mt-4 rounded-2xl drop-shadow-sm drop-shadow-white">
         <div class="p-6">
-          <h2 class="text-xl font-bold mb-2">Proyecto 2</h2>
-          <p class="text-gray-400 mb-4">
-            Otro ejemplo, puede ser una app real o un proyecto de práctica.
-          </p>
-          <a href="https://github.com/tuusuario/proyecto2" target="_blank" class="text-blue-400 font-semibold hover:underline">
+          <h2 class="text-xl font-bold mb-2">Tic Tac Toe (Frontend)</h2>
+            <p class="text-gray-400 mb-4">
+            En este proyecto aprendí los fundamentos de React, incluyendo el uso de componentes, props y estado. 
+            También trabajé con React Router para manejar la navegación y utilicé hooks como useState y useEffect 
+            para gestionar el ciclo de vida de los componentes. Este proyecto me ayudó a comprender la importancia 
+            de la modularidad y la reutilización de código en el desarrollo frontend.
+            </p>
+          <div class="flex place-content-between">
+          <a href="https://github.com/jvivas95/React.git" target="_blank" class="text-blue-400 font-semibold hover:underline">
             Ver código →
           </a>
+          <a href="https://react-red-pi.vercel.app" target="_blank" class="text-blue-400 font-semibold hover:underline">
+            Ver el proyecto →
+          </a>
+          </div>
         </div>
       </div>
 
-      <!-- Proyecto 3 -->
+      <!-- SDWEB - eHabilis -->
       <div class="scroll-animation scroll-animation-default group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
-        <img src="/projects/proyecto3.png" alt="Proyecto 3" class="w-full h-56 object-cover">
+        <img src="/public/eHabilis.png" alt="Proyecto 1" class="mx-auto w-fit h-64 object-cover mt-4 rounded-2xl drop-shadow-sm drop-shadow-white">
         <div class="p-6">
-          <h2 class="text-xl font-bold mb-2">Proyecto 3</h2>
+          <h2 class="text-xl font-bold mb-2">SdWeb (prácticas - Backend)</h2>
           <p class="text-gray-400 mb-4">
-            Un tercer proyecto para completar el grid.
+          Durante mis prácticas en <strong>SDWEB</strong> participé en el desarrollo y mantenimiento de 
+          <em>eHabilis Manager</em>, una herramienta de gestión empresarial desarrollada en 
+          <strong>Symfony</strong>. Implementé nuevas funcionalidades, desarrollé métricas e informes 
+          personalizados mediante extracción de datos y contribuí a optimizar procesos internos de la 
+          aplicación.
           </p>
-          <a href="https://github.com/tuusuario/proyecto3" target="_blank" class="text-blue-400 font-semibold hover:underline">
+          <div class="flex place-content-between">
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Proyecto DAILY ROUTINE -->
+      <div class="scroll-animation scroll-animation-default group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
+        <img src="/public/Portada-DailyRoutine.png" alt="Proyecto 1" class="mx-auto w-fit h-64 object-cover mt-4 rounded-2xl drop-shadow-sm drop-shadow-white md:w-80">
+        <div class="p-6">
+          <h2 class="text-xl font-bold mb-2">Daily Routine (FullStack)</h2>
+          <p class="text-gray-400 mb-4">
+            Proyecto de final de curso. En este proyecto desarrollé una aplicación completa utilizando tecnologías como PHP, Bootstrap y JavaScript.
+          <br/>A día de hoy, me sirve para recordar mis inicios, donde cometí muchos errores, como escribir código espagueti y no tener en cuenta principios 
+            fundamentales como SOLID. Aprendí la importancia de estructurar mejor el código, seguir buenas prácticas y aplicar principios de diseño para facilitar el mantenimiento y escalabilidad.
+          </p>
+          <div class="flex place-content-between">
+          <a href="https://github.com/jvivas95/Daily-Routine.git" target="_blank" class="text-blue-400 font-semibold hover:underline">
             Ver código →
           </a>
+          <a href="https://dailyroutine.42web.io/" target="_blank" class="text-blue-400 font-semibold hover:underline">
+            Ver el proyecto →
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto AMIVET -->
+      <div class="scroll-animation scroll-animation-default group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
+        <img src="/public/Amivet.png" alt="Proyecto 1" class="mx-auto w-96 object-cover mt-4 rounded-2xl drop-shadow-sm drop-shadow-white md:w-80">
+        <div class="p-6">
+          <h2 class="text-xl font-bold mb-2">Amivet</h2>
+            <p class="text-gray-400 mb-4">
+            En este proyecto aprendí los fundamentos del diseño web utilizando HTML y CSS. 
+            Trabajé en la creación de una página estática, enfocándome en la estructura semántica, animaciones y transiciones. Este proyecto 
+            me ayudó a comprender la importancia de una buena base en el desarrollo frontend.
+            </p>
+          <div class="flex place-content-between">
+          <a href="https://github.com/jvivas95/DIW_Proyecto.git" target="_blank" class="text-blue-400 font-semibold hover:underline">
+            Ver código →
+          </a>
+          <a href="https://diw-proyecto.vercel.app/" target="_blank" class="text-blue-400 font-semibold hover:underline">
+            Ver el proyecto →
+          </a>
+          </div>
         </div>
       </div>
 
