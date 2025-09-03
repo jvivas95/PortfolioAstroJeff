@@ -8,7 +8,7 @@ export default function TypedHero() {
     <div>
       <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
         <ReactTyped
-          strings={["Soy Jefferson Vivas"]}
+          strings={["Jefferson Vivas"]}
           typeSpeed={60}
           backSpeed={40}
           showCursor={false}
@@ -18,7 +18,7 @@ export default function TypedHero() {
 
       <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mt-2">
         <ReactTyped
-          strings={["FULL STACK DEVELOPER"]}
+          strings={["FullStack Developer"]}
           typeSpeed={70}
           backSpeed={40}
           startDelay={1500}

@@ -1,6 +1,16 @@
 ---
 import '../styles/global.css';
 import { getNombreSeccion } from '../utils/helpers.js';
+import IconPhp from '../icons/Php.astro';
+import IconCss from '../icons/Css.astro';
+import IconTailwind from '../icons/Tailwind.astro';
+import IconChartJs from '../icons/ChartJs.astro';
+import IconJs from '../icons/Js.astro';
+import IconMysql from '../icons/Mysql.astro';
+import IconReact from '../icons/React.astro';
+import IconSymfony from '../icons/Symfony.astro';
+import IconBootstrap from '../icons/Bootstrap.astro';
+import IconHtml from '../icons/Html.astro';
 ---
 
 <section id="proyectos" class="w-full py-20 bg-transparent">
@@ -11,7 +21,7 @@ import { getNombreSeccion } from '../utils/helpers.js';
     </h1>
 
     <!-- Subtítulo -->
-    <p class="scroll-animation scroll-animation-default text-center mb-14 text-lg md:text-2xl">
+    <p class="scroll-animation scroll-animation-default text-center mb-14 text-lg md:text-2xl h-full">
       Algunos de mis proyectos personales y experiencia laboral más reciente.
     </p>
 
@@ -23,10 +33,16 @@ import { getNombreSeccion } from '../utils/helpers.js';
         <img src="/MoneyTracker.png" alt="Proyecto 3" class="mx-auto w-fit h-64 object-cover mt-4 rounded-2xl drop-shadow-sm drop-shadow-white">
         <div class="p-6">
           <h2 class="text-xl font-bold mb-2">Money Tracker (FullStack)</h2>
-          <p class="text-gray-400 mb-4">
-            Este es mi proyecto más personal, ya que diseñé y programé esta aplicación desde 0.
-            <br/>Money tracker fue creada para mi madre, la idea nace de la necesidad de tener una herramienta para llevar el control de las finanzas de mis abuelos.
+          <p class="text-gray-400 mb-4 min-h-28">
+            App creada desde cero para gestionar las finanzas familiares. Desarrollada con tecnologías FullStack.
           </p>
+          <div class="flex place-content-between pb-3">
+            <IconTailwind class="h-10 w-10"/>
+            <IconChartJs class="h-10 w-10"/>
+            <IconJs class="h-10 w-10"/>
+            <IconPhp class="h-10 w-10"/>
+            <IconMysql class="h-10 w-10"/>
+          </div>
           <a href="https://github.com/jvivas95/movimientos-dinero.git" target="_blank" class="text-blue-400 font-semibold hover:underline">
             Ver código →
           </a>
@@ -38,12 +54,13 @@ import { getNombreSeccion } from '../utils/helpers.js';
         <img src="/React.png" alt="Proyecto 1" class="mx-auto w-fit h-64 object-cover mt-4 rounded-2xl drop-shadow-sm drop-shadow-white">
         <div class="p-6">
           <h2 class="text-xl font-bold mb-2">Tic Tac Toe (Frontend)</h2>
-            <p class="text-gray-400 mb-4">
-            En este proyecto aprendí los fundamentos de React, incluyendo el uso de componentes, props y estado. 
-            También trabajé con React Router para manejar la navegación y utilicé hooks como useState y useEffect 
-            para gestionar el ciclo de vida de los componentes. Este proyecto me ayudó a comprender la importancia 
-            de la modularidad y la reutilización de código en el desarrollo frontend.
+            <p class="text-gray-400 mb-4 min-h-28">
+            Juego clásico para aprender React, componentes, hooks y navegación con React Router.
             </p>
+          <div class="flex place-content-center space-x-6 pb-3">
+            <IconReact class="h-10 w-10"/>
+            <IconCss class="h-10 w-10"/>
+          </div>
           <div class="flex place-content-between">
           <a href="https://github.com/jvivas95/React.git" target="_blank" class="text-blue-400 font-semibold hover:underline">
             Ver código →
@@ -60,13 +77,14 @@ import { getNombreSeccion } from '../utils/helpers.js';
         <img src="/eHabilis.png" alt="Proyecto 1" class="mx-auto w-fit h-64 object-cover mt-4 rounded-2xl drop-shadow-sm drop-shadow-white">
         <div class="p-6">
           <h2 class="text-xl font-bold mb-2">SdWeb (prácticas - Backend)</h2>
-          <p class="text-gray-400 mb-4">
-          Durante mis prácticas en <strong>SDWEB</strong> participé en el desarrollo y mantenimiento de 
-          <em>eHabilis Manager</em>, una herramienta de gestión empresarial desarrollada en 
-          <strong>Symfony</strong>. Implementé nuevas funcionalidades, desarrollé métricas e informes 
-          personalizados mediante extracción de datos y contribuí a optimizar procesos internos de la 
-          aplicación.
+          <p class="text-gray-400 mb-4 min-h-28">
+          Prácticas en SDWEB desarrollando nuevas funciones y métricas en eHabilis Manager con Symfony.
           </p>
+          <div class="flex place-content-center space-x-6 pb-3">
+            <IconSymfony class="h-10 w-10"/>
+            <IconChartJs class="h-10 w-10"/>
+            <IconMysql class="h-10 w-10"/>
+          </div>
           <div class="flex place-content-between">
           </div>
         </div>
@@ -79,11 +97,15 @@ import { getNombreSeccion } from '../utils/helpers.js';
         <img src="/Portada-DailyRoutine.png" alt="Proyecto 1" class="mx-auto w-fit h-64 object-cover mt-4 rounded-2xl drop-shadow-sm drop-shadow-white md:w-80">
         <div class="p-6">
           <h2 class="text-xl font-bold mb-2">Daily Routine (FullStack)</h2>
-          <p class="text-gray-400 mb-4">
-            Proyecto de final de curso. En este proyecto desarrollé una aplicación completa utilizando tecnologías como PHP, Bootstrap y JavaScript.
-          <br/>A día de hoy, me sirve para recordar mis inicios, donde cometí muchos errores, como escribir código espagueti y no tener en cuenta principios 
-            fundamentales como SOLID. Aprendí la importancia de estructurar mejor el código, seguir buenas prácticas y aplicar principios de diseño para facilitar el mantenimiento y escalabilidad.
+          <p class="text-gray-400 mb-4 min-h-28">
+            App de organización personal hecha con PHP, Bootstrap y JS. Aprendizaje sobre buenas prácticas y estructura de código.
           </p>
+          <div class="flex place-content-between pb-3">
+            <IconBootstrap class="h-10 w-10"/>
+            <IconJs class="h-10 w-10"/>
+            <IconPhp class="h-10 w-10"/>
+            <IconMysql class="h-10 w-10"/>
+          </div>
           <div class="flex place-content-between">
           <a href="https://github.com/jvivas95/Daily-Routine.git" target="_blank" class="text-blue-400 font-semibold hover:underline">
             Ver código →
@@ -97,14 +119,17 @@ import { getNombreSeccion } from '../utils/helpers.js';
 
       <!-- Proyecto AMIVET -->
       <div class="scroll-animation scroll-animation-default group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
-        <img src="/Amivet.png" alt="Proyecto 1" class="mx-auto w-96 object-cover mt-4 rounded-2xl drop-shadow-sm drop-shadow-white md:w-80">
+        <img src="/Amivet.png" alt="Proyecto 1" class="mx-auto w-full h-64 object-cover mt-4 rounded-2xl drop-shadow-sm drop-shadow-white md:w-80">
         <div class="p-6">
           <h2 class="text-xl font-bold mb-2">Amivet</h2>
-            <p class="text-gray-400 mb-4">
-            En este proyecto aprendí los fundamentos del diseño web utilizando HTML y CSS. 
-            Trabajé en la creación de una página estática, enfocándome en la estructura semántica, animaciones y transiciones. Este proyecto 
-            me ayudó a comprender la importancia de una buena base en el desarrollo frontend.
+            <p class="text-gray-400 mb-4 min-h-28">
+            Página estática para practicar HTML y CSS, enfocada en estructura semántica y animaciones.
             </p>
+            <div class="flex place-content-center space-x-6 pb-3">
+            <IconHtml class="h-10 w-10"/>
+            <IconCss class="h-10 w-10"/>
+            <IconJs class="h-10 w-10"/>
+          </div>
           <div class="flex place-content-between">
           <a href="https://github.com/jvivas95/DIW_Proyecto.git" target="_blank" class="text-blue-400 font-semibold hover:underline">
             Ver código →
