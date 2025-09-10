@@ -115,3 +115,23 @@ html {
 .animate-fade-in {
   animation: fade-in 1s ease-out forwards;
 }
+
+.foto-perfil {
+  float: left;
+  shape-outside: circle(55%);
+  object-fit: cover;
+  margin: 2rem 2rem 2rem 0;
+}
+
+.foto-perfil-mobile {
+  /* Por defecto, sin float ni shape-outside */
+}
+
+@media (min-width: 1024px) {
+  .foto-perfil-mobile {
+    float: left;
+    shape-outside: circle(55%);
+    object-fit: cover;
+    margin: 2rem 2rem 2rem 0;
+  }
+}
